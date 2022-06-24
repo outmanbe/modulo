@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function divideby() {
+            num1 = document.toto[0].value;
+           
+            console.log(num1);
+            document.getElementById("result").innerHTML = Math.floor (num1/num2) ; 
+            var remainder = num1 % num2 ;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="toto" id="titi" action="traitementphp" class="css" method="post">
+     1st number: <input type="text" id="firstNumber"/>
+     <br>
+     <input type="button" onclick="divideby()" value="tester si nbre premier"/>
+    </form>
+    <p>
+        The result is :
+        <span id="result"></span>
+    </p>
+</body>
+
+</html>
